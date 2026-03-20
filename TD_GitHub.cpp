@@ -1,6 +1,6 @@
 //Fonctions réalisées par l'étudiant 1 :
 bool estMajeur(int age) {
-    if (age >= 18) {
+    if (age >= 18 || age < 0) {
         return true;
     } else {
         return false;
@@ -46,7 +46,7 @@ int plusGrand(int a, int b, int c) {
 bool estPair(int nb)
 {
 	int resultat;
-	resulstat = nb /2 ==0;
+	resulstat = nb % 2 ==0;
 	return resulstat;
 }
 
