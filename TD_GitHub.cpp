@@ -23,7 +23,11 @@ int exposant(int nbre, int exp) {
 
 
 //Fonctions réalisées par l'étudiant 2 :
-
+bool estPair(int nb)
+{
+	int resultat;
+	if nb
+}
 
 
 
