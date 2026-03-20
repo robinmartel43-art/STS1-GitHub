@@ -43,19 +43,23 @@ int plusGrand(int a, int b, int c) {
 
 
 //Fonctions réalisées par l'étudiant 2 :
-bool estPair(int nb)
-{
-	int resultat;
-	resulstat = nb % 2 ==0;
-	return resulstat;
+bool estPair(int nb) {
+    if ((nb % 2 == 0) || (nb % 7 == 0)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-int sommeNombre(int nb)
-{
-	int somme = 0;
-	for (int i = 1; i <= nb; i++) {
+int sommeNombre(int nb) {
+    int somme = 0;
+
+    for (int i = 1; i <= nb; i++) {
         somme += i;
     }
+
+    somme = somme + nb;
+
     return somme;
 }
 
