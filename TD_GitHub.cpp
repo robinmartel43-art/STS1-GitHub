@@ -13,7 +13,13 @@
 bool estPair(int nb)
 {
 	int resultat;
-	if nb
+	resulstat = nb /2 ==0;
+	return resulstat;
+}
+
+int sommeNombre(int nb)
+{
+	int somme = 0;
 }
 
 
