@@ -15,6 +15,31 @@ int exposant(int nbre, int exp) {
     return resultat;
 }
 
+float TVA(int prix) {
+    float prixFinal;
+
+    if (prix >= 1000) {
+        prixFinal = prix * 1.196f;
+    } else {
+        prixFinal = prix * 1.055f;
+    }
+
+    return prixFinal;
+}
+
+int plusGrand(int a, int b, int c) {
+    int max = a;
+
+    if (b > max) {
+        max = b;
+    }
+
+    if (c > max) {
+        max = c;
+    }
+
+    return max;
+}
 
 
 //Fonctions réalisées par l'étudiant 2 :
