@@ -12,7 +12,7 @@ bool estPair(int nb);
 
 int sommeNombre(int nb);
 
-float salaireNet(int salaire);
+float salaireNet(int salaire,float charge_salariale,float prime);
 
 int plusPetit(int a, int b, int c);
 
