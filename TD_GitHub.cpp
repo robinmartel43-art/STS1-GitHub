@@ -109,7 +109,9 @@ else return false;
 
 // Retourne la moyenne des trois nombres passés en paramètre
 float moyenne(int nb1, int nb2, int nb3){
-return (nb1 + nb2 + nb3)/3.0f;
+	float resulstat = (nb1 + nb2 + nb3)/3.0f;
+	if (resulstat < 0)
+		return -1.0f;
 }
 
 // Reçoit un prix et une réduction en pourcentage
@@ -123,6 +125,8 @@ return prix;
 
 // Retourne le nombre médian parmi les trois entiers a, b, c
 int nombreMedian(int a, int b, int c){
+	if (a == b || a == c || b == c)
+        return 999;    
     if ((a >= b && a <= c) || (a >= c && a <= b))
         return a;
     if ((b >= a && b <= c) || (b >= c && b <= a))
