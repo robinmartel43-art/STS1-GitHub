@@ -117,10 +117,14 @@ float moyenne(int nb1, int nb2, int nb3){
 // Reçoit un prix et une réduction en pourcentage
 // Applique d'abord la réduction, puis la TVA à 5.5%
 // Retourne le prix final
-float reduction(int prix, int reduc){
-prix = prix - prix*(reduc/100.0f);
-prix = prix + prix*5.5/100.0f;
-return prix;
+float reduction(int prix, int reduc, float tva) {
+    float prixFinal = (float)prix;
+
+    prixFinal = prixFinal - (prixFinal * (reduc / 100.0f));
+
+    prixFinal = prixFinal + (prixFinal * (tva / 100.0f));
+
+    return prixFinal;
 }
 
 // Retourne le nombre médian parmi les trois entiers a, b, c
